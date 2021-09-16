@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
     echo "Вы отправили: A = $a, B = $b, C = $c, D = $d, E = $e, F = $f, G = $g" . '<br><br>';
     
     echo 'Минимальное значение:  ' . min($arr) . '<br><br>'; 
-    echo 'Максимальное значение' . max($arr) . '<br><br>';
+    echo 'Максимальное значение:  ' . max($arr) . '<br><br>';
     
 
 ?>
