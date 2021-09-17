@@ -17,7 +17,9 @@
         <input type="text" name="g"><br><br>
         <input type="submit" name="submit" value="Отправить">
     </form>
+
 <?php
+//  проверяем если форма отправлена успешно и присоеденяем поля к пхп присвоив им переменные
 if (isset($_POST['submit'])) {
     $a = intval($_POST['a']);
     $b = intval($_POST['b']);
@@ -27,13 +29,13 @@ if (isset($_POST['submit'])) {
     $f = intval($_POST['f']);
     $g = intval($_POST['g']);
 }
-
+    // создаём массив и помещаем в него данные чисел из формы
     $arr = array($a, $b, $c, $d, $e, $f, $g);
 
     echo '<hr>';
-
+    //Вывод набранных пользователем чисел
     echo "Вы отправили: A = $a, B = $b, C = $c, D = $d, E = $e, F = $f, G = $g" . '<br><br>';
-    
+    // ищем минимальное и максимальное значение из массива функциями min() и max()
     echo 'Минимальное значение:  ' . min($arr) . '<br><br>'; 
     echo 'Максимальное значение:  ' . max($arr) . '<br><br>';
     
