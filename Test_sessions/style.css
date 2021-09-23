@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(243, 244, 255);
+    font-size: 23px;
+}
+.container {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: large;
+}
+
+input {
+    font-size: large;
+    margin-top: 10px;
+}
